@@ -1,0 +1,4 @@
+-napravi popUp odabir filtera koliko vode filtrira 50,75,100,150 litara
+-nakon odabira upises datum da bi trackovao koliko dana je proslo od menjanja filtera
+-nakon 2 meseca upozorenje da se promeni filter (crvenim slovima) na osnovu datuma! counter da bude u danima u pozadini a nek prikazuje datum pocetnog merenja. nakon 60 dana upozorenje da je proslo 60 dana i da nije sigurno zbog bakterija!
+-na dugme reset pita da li si siguran i onda kreira opet pocetni popUp za odabir filtera
