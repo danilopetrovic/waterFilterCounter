@@ -2,3 +2,53 @@ body {
     background-color: #232323;
     color: #DDD;
 }
+
+/* Stiliranje dugmadi: jedno ispod drugog, veći font/padding, zaobljene ivice i moderan dark dizajn */
+button {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin: 12px 0;
+    font-size: 1.25rem;
+    padding: 14px 18px;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.06);
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+    color: #EEE;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+/* Opcioni akcent za primarno dugme (ako koristite klasu .primary) */
+button.primary {
+    background: linear-gradient(90deg,#1f8bd6,#3aa0ff);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: #FFF;
+    box-shadow: 0 8px 22px rgba(34,150,255,0.12);
+}
+
+/* Hover / active efekti */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+}
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+/* #result: najkrupniji i jasno vidljiv */
+#result {
+    display: inline-block;
+    margin: 18px 0;
+    padding: 10px 14px;
+    font-size: clamp(1.8rem, 4.5vw, 3rem);
+    font-weight: 800;
+    color: #FFD54A;
+    background: rgba(255,255,255,0.02);
+    border-radius: 6px;
+    text-shadow: 0 4px 18px rgba(0,0,0,0.7);
+    -webkit-font-smoothing: antialiased;
+}
