@@ -1,6 +1,6 @@
 // ...existing code...
 (function(){
-    const INITIAL = 150;
+    const INITIAL = 100;
     const STORAGE_KEY = 'wfc_current';
     let current = INITIAL;
 
