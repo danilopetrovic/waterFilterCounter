@@ -20,7 +20,9 @@
         <span id="result"></span> liters of water left for filtration.
       </p>
     </section>
-    <div>
+    <div class="button-wrapper">
+      <button id="custom">- Custom Value</button>
+      <div id="custom-buttons" class="custom-buttons"></div>
       <button id="0.7">- 0.7 l</button>
       <button id="1.2">- 1.2 l</button>
       <button id="restart">Restart counter</button>
@@ -33,6 +35,17 @@
       </p>
     </article>
   </main>
+
+  <div id="custom-modal" class="modal-overlay hidden" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="custom-modal-title">
+      <p id="custom-modal-title" class="modal-title">Enter custom value</p>
+      <input id="custom-value" type="number" step="0.1" min="0.01" placeholder="0.7" />
+      <div class="modal-actions">
+        <button id="custom-confirm" class="primary">Confirm</button>
+        <button id="custom-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
 
   <script src="main.js"></script>
 </body>
