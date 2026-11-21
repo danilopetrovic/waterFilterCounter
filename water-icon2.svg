@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="dropGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7FD9FF"/>
+      <stop offset="50%" stop-color="#27AAFF"/>
+      <stop offset="100%" stop-color="#006BFF"/>
+    </linearGradient>
+
+    <radialGradient id="shineGradient" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#DDF7FF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#DDF7FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer glow -->
+  <path
+    filter="url(#glow)"
+    fill="#1694FF"
+    opacity="0.6"
+    d="M256 25
+       C220 140 110 220 110 330
+       C110 430 180 487 256 487
+       C332 487 402 430 402 330
+       C402 220 292 140 256 25
+       Z"/>
+
+  <!-- Main drop -->
+  <path
+    fill="url(#dropGradient)"
+    d="M256 25
+       C220 140 130 220 130 320
+       C130 420 185 470 256 470
+       C327 470 382 420 382 320
+       C382 220 292 140 256 25
+       Z"/>
+
+  <!-- Shine -->
+  <path
+    fill="url(#shineGradient)"
+    opacity="0.9"
+    d="M256 40
+       C225 130 165 210 165 305
+       C165 380 215 430 290 430
+       C340 430 382 390 382 320
+       C382 220 292 140 256 40
+       Z"/>
+
+  <!-- Highlight -->
+  <path
+    fill="#FFFFFF"
+    opacity="0.9"
+    d="M220 160
+       C190 190 155 235 145 280
+       C138 310 147 325 160 325
+       C182 325 198 300 215 260
+       C233 220 245 190 245 165
+       C245 155 238 152 220 160
+       Z"/>
+
+  <!-- Small reflection -->
+  <ellipse
+    cx="145"
+    cy="350"
+    rx="16"
+    ry="32"
+    fill="#FFFFFF"
+    opacity="0.9"/>
+
+</svg>
